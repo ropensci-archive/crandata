@@ -1,2 +1,8 @@
-packages
-taballstarballs
+packages/*
+!packages/.gitkeep
+tarballs/*.*
+logs/*.log
+.DS_Store
+.Rproj.user
+.Rdata
+.Rhistory

@@ -1,0 +1,10 @@
+Package: crandata
+Version: 0.0.0.9000
+Title: Logs data about CRAN packages
+Description: Syncs source CRAN packages and calculates key statistics
+Authors@R: person("Noam", "Ross", , "first.last@example.com", c("aut", "cre"))
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: rsync, tar
+ByteCompile: true
