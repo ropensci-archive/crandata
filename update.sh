@@ -14,7 +14,5 @@ cp logs/rsync_latest.log logs/rsync_`date "+%Y_%m_%d__%H_%M_%S"`.log
 echo "New/updated packages"
 cat logs/rsync_latest.log | grep ">" | grep -o "\S*$" 
 cat logs/rsync_latest.log | grep ">" | grep -o "\S*$" | xargs -i tar xfm tarballs/{} -C packages/
-echo "Deleted packages"
-cat logs/rsync_latest.log | grep ^\*deleting | grep -P -o "(?<=\s)[\w\.]+(?=_)"
-cat logs/rsync_latest.log | grep ^\*deleting | grep -P -o "(?<=\s)[\w\.]+(?=_)" | xargs -i rm -rf packages/
+
 
